@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            font-size: 25px;
+        }
+
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around ;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(192, 192, 192);
+            text-align: center;
+            border: 4px solid black;
+            margin:1px;
+        }
+        aside{
+            width: 30%;
+            height:auto;
+            background-color: rgb(228, 228, 228);
+            border: 4px solid black;
+            margin:1px;
+
+        }
+
+        .content{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width:70% ;
+            background-color: rgb(226, 226, 226);
+            border: 4px solid black;
+            flex-wrap: wrap;
+
+
+        }
+
+        .main{
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(202, 202, 202);
+            border: 4px solid black;
+            margin:3px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 30px;
+
+        }
+
+        p{
+            display: flex;
+            flex-direction: row;
+            vertical-align: bottom;
+            background-color: rgb(226, 226, 226);
+            padding-top: 10px;
+            padding-left: 3px;
+            padding-right: 3px;
+            
+        }
+        .foot{
+            background: none;
+        }
+        button{
+            background-color: aqua;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+
+
+        .termekkep{
+            max-width: 70px;
+            max-height: 70px;
+
+        }
+
+        h6{
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        img{
+            border-radius: 5px;         
+        }
+
+        .logo{
+            width: 50px;
+
+        }
+
+        .cards{
+            height: 35vh;
+            display: flex;
+            width: auto;
+            flex: 1 0 30%;
+            margin-bottom: 10px;
+            margin: 5px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            flex-direction: column;
+            align-items:center ;
+            justify-content: space-between;
+            border: 1px solid black;
+            
+        }
+
+        .termeknev{
+            text-align: center;
+        }
+
+
+
+
+
+        @media screen and (max-width: 400px) {
+            .main{
+                flex-direction: column;
+                
+            }
+            aside{
+                width: 100%;
+                height: 100px;
+            }
+            .content{
+                width: 100%;
+                align-items: center;
+            }
+            header{
+                flex-direction: column;
+                height: fit-content;
+            }
+            footer{
+                flex-direction: column;
+                height: fit-content;
+                
+            }
+
+            .foot{
+                margin: 0 auto;
+            }
+            img{
+                width: 100px;
+            }
+            p{
+                margin: 10px;
+            }
+
+            .cards{
+                flex: 1 0 50%;
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header class="head">
+        <p>Home</p>
+        <p>Rólunk</p>
+        <p>Termékeink</p>
+        <p>Kapcsolat</p>
+    </header>
+    <div class="main">
+        <aside class="nav">Nav</aside>
+        <div class="content">
+
+            <div class="cards">
+                <div class="termeknev">
+                    <h6>Information exercise buk</h6>
+                </div>
+                <div>
+                    <img src="./res_55eb5bbf3c65404ea4d1440f8032135c.jpg" alt="" class="termekkep">
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="termeknev">
+                    <h6>Türr sounds</h6>
+                </div>
+                <div>
+                    <img src="./306552_02_akkus-furocsavarozo-18v-li-ion.png" alt="" class="termekkep">
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="termeknev">
+                    <h6>Termék</h6>
+                </div>
+                <div>
+                    <img src="./306552_02_akkus-furocsavarozo-18v-li-ion.png" alt="" class="termekkep">
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="termeknev">
+                    <h6>11.A Pad</h6>
+                </div>
+                <div>
+                    <img src="./M-Agatkaduo.jpg" alt="" class="termekkep">
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="termeknev">
+                    <h6>Termék</h6>
+                </div>
+                <div>
+                    <img src="./306552_02_akkus-furocsavarozo-18v-li-ion.png" alt="" class="termekkep">
+                </div>
+            </div>
+            <div class="cards">
+                <div class="termeknev">
+                    <h6>Termék</h6>
+                </div>
+                <div>
+                    <img src="./306552_02_akkus-furocsavarozo-18v-li-ion.png" alt="" class="termekkep">
+                </div>
+            </div>
+
+
+
+
+
+
+            
+        </div>
+
+    </div>
+    </div>  
+    <footer>
+        <p class="foot"><img src="./logo-2790253_1280.png" alt="logo" class="logo"></p>
+        <p class="foot">©</p>
+        <p class="foot">
+            <button>Feliratkozás</button>
+        </p>
+
+    </footer> 
+
+</body>
+</html>
